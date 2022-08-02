@@ -1,0 +1,10 @@
+ninja 
+yacs 
+cython 
+matplotlib 
+opencv-python 
+tqdm 
+sklearn 
+comet_ml 
+shapely 
+pandas
