@@ -36,7 +36,7 @@ jobs:
           PLATFORM: aarch64
         run: |
           IMAGE_NAME=$DOCKER_URL/$DOCKER_HUB_NAMESPACE/$GITHUB_REPOSITORY_NAME_PART:$PLATFORM-$GITHUB_REF_SLUG-$GITHUB_SHA_SHORT
-          docker build -f $PLATFORM_mlchain.Dockerfile -t $IMAGE_NAME .
+          docker build -f $PLATFORM.Dockerfile -t $IMAGE_NAME .
           echo "$DOCKER_HUB_PASSWORD" | docker login --username $DOCKER_HUB_USERNAME --password-stdin $DOCKER_URL
           docker push $IMAGE_NAME
           docker logout
