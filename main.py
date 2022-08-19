@@ -61,6 +61,13 @@ class OcclusionNetModel:
         infer_result['vized_img'] = vized_img
         
         return infer_result
+    
+    def predict_batch(self, imgs: list[np.ndarray]):
+        result = []
+        for img in imgs:
+            result.append(self.predict(img))
+
+        return result
 
     def _kps_to_height_line(self, kps):
         NAMES = [
