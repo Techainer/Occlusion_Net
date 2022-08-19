@@ -1,0 +1,5 @@
+[core]
+    remote = techainer
+['remote "techainer"']
+    url = s3://techainer/horus/face_recognition_flow_v2
+    endpointurl = https://sgp1.digitaloceanspaces.com
