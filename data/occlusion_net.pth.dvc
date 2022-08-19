@@ -1,0 +1,4 @@
+outs:
+- md5: 964419da1d5e5368333fba12c14e6126
+  size: 590948328
+  path: occlusion_net.pth
